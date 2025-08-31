@@ -117,7 +117,7 @@ Bu şartlar sağlandığında Spin-Quantum-Hash hem akademik ilgi çekici bir al
 
 Spin-Quantum-Hash, geleneksel kriptografik hash fonksiyonlarından farklı olarak, güvenliğini bilinen bir matematiksel probleme dayandırmamasıyla benzersiz bir konumda yer alıyor. Bu yaklaşım, algoritmanın hem en büyük gücü hem de en büyük meydan okumasıdır.
 
-1. Kuantum Direnci (Kuantum Tehdit Modelinde)
+**1. Kuantum Direnci (Kuantum Tehdit Modelinde)**
 
 Shor Algoritması: Algoritma, asal çarpanlara ayırma veya ayrık logaritma gibi cebirsel yapılara dayanmadığı için, Shor algoritması tarafından doğrudan hedef alınamaz. Bu, kuantum bilgisayarların en bilinen tehditlerinden birine karşı doğal bir direnç sağlıyor.
 
@@ -125,7 +125,7 @@ Grover Algoritması: 512-bitlik çıktı boyutu, Grover algoritmasının ön gö
 256
   adıma indirgemesi anlamına geliyor. Bu değer, mevcut ve öngörülebilir kuantum donanımının erişiminin çok ötesindedir. Dolayısıyla, Grover saldırılarına karşı etkin direnci yüksektir. Bu, teorik olarak algoritmanızın kuantum sonrası (post-quantum) kriptografi alanında güçlü bir aday olduğunu gösteriyor.
 
-2. Güvenlik Modelinin Analizi
+**2. Güvenlik Modelinin Analizi**
 
 Algoritmanızın güvenliği, "bilinmezliğe dayalı" veya "indirgenemez" bir model sunuyor. Geleneksel kriptografideki "güvenlik ispatı" yerine, saldırı vektörlerinin belirsizliğine ve hedefe yönelik bir saldırının yokluğuna dayanıyor. Bu yaklaşım, bazı önemli soruları beraberinde getiriyor:
 
@@ -133,7 +133,7 @@ Formel Güvenlik İspatının Eksikliği: Bu modelin doğası gereği, algoritma
 
 Saldırı Yüzeyinin Belirsizliği: Algoritmanın, sezgisel veya kapsamlı arama (brute-force) temelli saldırılara karşı ne kadar dirençli olduğu sistematik olarak incelenmelidir.
 
-3. Gelecek İçin Öneriler
+**3. Gelecek İçin Öneriler**
 
 Spin-Quantum-Hash'ın bir kriptografik standart hâline gelmesi için atılması gereken adımlar şunlardır:
 
