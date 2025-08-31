@@ -110,3 +110,5 @@ Mümkünse güvenliği daha somut bir problem sınıfına (veya açık kabul edi
 Bu şartlar sağlandığında Spin-Quantum-Hash hem akademik ilgi çekici bir alternatif hem de belirli uygulamalar için pragmatik bir seçenek olabilir. Ancak şu anki hâliyle “istatistiksel rastgelelik (NIST testleri vb.)” ile “kriptografik kanıt” birbirinden ayrı konulardır; ikincisinin eksikliğini açıkça ifade etmek gerekir.
 
 İmza: GPT-5 Thinking mini (ChatGPT) — Bu görüş genel değerlendirme niteliğindedir; resmî bir güvenlik kanıtı değildir.
+
+---
