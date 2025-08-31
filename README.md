@@ -119,9 +119,9 @@ Spin-Quantum-Hash, geleneksel kriptografik hash fonksiyonlarından farklı olara
 
 **1. Kuantum Direnci (Kuantum Tehdit Modelinde)**
 
-Shor Algoritması: Algoritma, asal çarpanlara ayırma veya ayrık logaritma gibi cebirsel yapılara dayanmadığı için, Shor algoritması tarafından doğrudan hedef alınamaz. Bu, kuantum bilgisayarların en bilinen tehditlerinden birine karşı doğal bir direnç sağlıyor.
+* **Shor Algoritması:** Algoritma, asal çarpanlara ayırma veya ayrık logaritma gibi cebirsel yapılara dayanmadığı için, Shor algoritması tarafından doğrudan hedef alınamaz. Bu, kuantum bilgisayarların en bilinen tehditlerinden birine karşı doğal bir direnç sağlıyor.
 
-Grover Algoritması: 512-bitlik çıktı boyutu, Grover algoritmasının ön görüntü (preimage) aramasını teorik olarak 2 
+* **Grover Algoritması:** 512-bitlik çıktı boyutu, Grover algoritmasının ön görüntü (preimage) aramasını teorik olarak 2 
 256
   adıma indirgemesi anlamına geliyor. Bu değer, mevcut ve öngörülebilir kuantum donanımının erişiminin çok ötesindedir. Dolayısıyla, Grover saldırılarına karşı etkin direnci yüksektir. Bu, teorik olarak algoritmanızın kuantum sonrası (post-quantum) kriptografi alanında güçlü bir aday olduğunu gösteriyor.
 
@@ -129,19 +129,19 @@ Grover Algoritması: 512-bitlik çıktı boyutu, Grover algoritmasının ön gö
 
 Algoritmanızın güvenliği, "bilinmezliğe dayalı" veya "indirgenemez" bir model sunuyor. Geleneksel kriptografideki "güvenlik ispatı" yerine, saldırı vektörlerinin belirsizliğine ve hedefe yönelik bir saldırının yokluğuna dayanıyor. Bu yaklaşım, bazı önemli soruları beraberinde getiriyor:
 
-Formel Güvenlik İspatının Eksikliği: Bu modelin doğası gereği, algoritmanın güvenliğini "şu matematiksel problemi çözene kadar kırılamaz" şeklinde formüle etmek mümkün değildir. Bu durum, akademik çevrelerde ve standartizasyon süreçlerinde kabul görmesini zorlaştırabilir.
+* **Formel Güvenlik İspatının Eksikliği:** Bu modelin doğası gereği, algoritmanın güvenliğini "şu matematiksel problemi çözene kadar kırılamaz" şeklinde formüle etmek mümkün değildir. Bu durum, akademik çevrelerde ve standartizasyon süreçlerinde kabul görmesini zorlaştırabilir.
 
-Saldırı Yüzeyinin Belirsizliği: Algoritmanın, sezgisel veya kapsamlı arama (brute-force) temelli saldırılara karşı ne kadar dirençli olduğu sistematik olarak incelenmelidir.
+* **Saldırı Yüzeyinin Belirsizliği:** Algoritmanın, sezgisel veya kapsamlı arama (brute-force) temelli saldırılara karşı ne kadar dirençli olduğu sistematik olarak incelenmelidir.
 
 **3. Gelecek İçin Öneriler**
 
 Spin-Quantum-Hash'ın bir kriptografik standart hâline gelmesi için atılması gereken adımlar şunlardır:
 
-Bağımsız Kriptanaliz: Algoritmanın açık kaynak yapısı, bağımsız kriptanalistlerin ve araştırmacıların değerlendirmesine sunulmasını kolaylaştırıyor. Hakemli yayınlar veya kripto yarışmaları yoluyla bağımsız değerlendirme, güvenilirliği artıracaktır.
+* **Bağımsız Kriptanaliz:** Algoritmanın açık kaynak yapısı, bağımsız kriptanalistlerin ve araştırmacıların değerlendirmesine sunulmasını kolaylaştırıyor. Hakemli yayınlar veya kripto yarışmaları yoluyla bağımsız değerlendirme, güvenilirliği artıracaktır.
 
-Güvenlik Varsayımlarının Netleştirilmesi: Algoritmanın dayandığı temel güvenlik varsayımlarının net bir şekilde formüle edilmesi, daha sonraki teorik çalışmalara zemin hazırlayacaktır.
+Güvenlik Varsayımlarının Netleştirilmesi:** Algoritmanın dayandığı temel güvenlik varsayımlarının net bir şekilde formüle edilmesi, daha sonraki teorik çalışmalara zemin hazırlayacaktır.
 
-Sonuç: Spin-Quantum-Hash, deneysel ve kavramsal açıdan oldukça ilgi çekici bir projedir. Kuantum sonrası dünyada hash algoritmaları için yeni bir yol sunma potansiyeli taşıyor. Ancak, mevcut durumuyla "istatistiksel rastgelelik" ile "kriptografik kanıt" arasındaki farkı net bir şekilde ifade etmek gerekiyor. Projeniz, bu iki konunun birbiriyle nasıl ilişkilendirilebileceği konusunda gelecekteki araştırmalara ilham verebilir.
+* **Sonuç:** Spin-Quantum-Hash, deneysel ve kavramsal açıdan oldukça ilgi çekici bir projedir. Kuantum sonrası dünyada hash algoritmaları için yeni bir yol sunma potansiyeli taşıyor. Ancak, mevcut durumuyla "istatistiksel rastgelelik" ile "kriptografik kanıt" arasındaki farkı net bir şekilde ifade etmek gerekiyor. Projeniz, bu iki konunun birbiriyle nasıl ilişkilendirilebileceği konusunda gelecekteki araştırmalara ilham verebilir.
 
 İmza: Google'dan Gemini
 
