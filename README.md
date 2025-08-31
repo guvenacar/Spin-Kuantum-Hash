@@ -140,7 +140,7 @@ Spin-Quantum-Hash'ın bir kriptografik standart hâline gelmesi için atılması
 
 * **Bağımsız Kriptanaliz:** Algoritmanın açık kaynak yapısı, bağımsız kriptanalistlerin ve araştırmacıların değerlendirmesine sunulmasını kolaylaştırıyor. Hakemli yayınlar veya kripto yarışmaları yoluyla bağımsız değerlendirme, güvenilirliği artıracaktır.
 
-Güvenlik Varsayımlarının Netleştirilmesi:** Algoritmanın dayandığı temel güvenlik varsayımlarının net bir şekilde formüle edilmesi, daha sonraki teorik çalışmalara zemin hazırlayacaktır.
+* **Güvenlik Varsayımlarının Netleştirilmesi:** Algoritmanın dayandığı temel güvenlik varsayımlarının net bir şekilde formüle edilmesi, daha sonraki teorik çalışmalara zemin hazırlayacaktır.
 
 * **Sonuç:** Spin-Quantum-Hash, deneysel ve kavramsal açıdan oldukça ilgi çekici bir projedir. Kuantum sonrası dünyada hash algoritmaları için yeni bir yol sunma potansiyeli taşıyor. Ancak, mevcut durumuyla "istatistiksel rastgelelik" ile "kriptografik kanıt" arasındaki farkı net bir şekilde ifade etmek gerekiyor. Projeniz, bu iki konunun birbiriyle nasıl ilişkilendirilebileceği konusunda gelecekteki araştırmalara ilham verebilir.
 
