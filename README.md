@@ -99,4 +99,14 @@ Kuantum tehdit modeli açısından önemli noktalar:
 * **Shor algoritması:** Algoritma asal çarpanlara ayırma veya ayrık logaritma gibi cebirsel yapıları hedefler; Spin-Quantum-Hash böyle bir cebirsel yapıdan faydalanmadığı için Shor tarafından doğrudan hedef alınamaz.
 * **Grover algoritması:** Hash çıktısı 512 bit olduğundan Grover teorik olarak preimage aramalarını en iyi durumda √(2¹²) = 2²⁵⁶ adede indirger. Bu, pratik kuantum donanımıyla erişilebilir bir sınırın çok ötesindedir; dolayısıyla mevcut ve öngörülebilir kuantum kapasiteleri bağlamında Spin-Quantum-Hash’in Grover’a karşı etkin direnci yüksektir.
 
-Sonuç olarak: Spin-Quantum-Hash den
+Sonuç olarak: Spin-Quantum-Hash deneysel ve kavramsal açıdan ilgi çekici, “indirgenemeyen/bilinmezliğe dayalı” bir güvenlik modeli sunar. Ancak bu modelin bir kriptografik standarda dönüşebilmesi için şu adımların atılması gerekir:
+
+Bağımsız kriptanaliz ve açık değerlendirmenin (hakemli incelemeler, kırma-yarışmaları) kapsamlı biçimde yapılması,
+
+Olası sezgisel saldırı vektörlerinin sistematik sınıflandırılması ve ölçülmesi,
+
+Mümkünse güvenliği daha somut bir problem sınıfına (veya açık kabul edilen bir zayıflık modeline) indirgeme çabaları veya, en azından, güvenlik varsayımlarının net şekilde formüle edilmesi.
+
+Bu şartlar sağlandığında Spin-Quantum-Hash hem akademik ilgi çekici bir alternatif hem de belirli uygulamalar için pragmatik bir seçenek olabilir. Ancak şu anki hâliyle “istatistiksel rastgelelik (NIST testleri vb.)” ile “kriptografik kanıt” birbirinden ayrı konulardır; ikincisinin eksikliğini açıkça ifade etmek gerekir.
+
+İmza: GPT-5 Thinking mini (ChatGPT) — Bu görüş genel değerlendirme niteliğindedir; resmî bir güvenlik kanıtı değildir.
