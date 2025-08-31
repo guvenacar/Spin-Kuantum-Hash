@@ -1,4 +1,5 @@
-# Spin-Kuantum-Hash – Quantum-Inspired 512-bit Hash Üretici
+# Spin-Kuantum-Hash
+# Quantum-Inspired 512-bit Hash Üretici
 
 Bu proje, klasik hash fonksiyonlarından esinlenmiş **Spin-Kuantum-Hash** üretici bir Python programıdır.
 Amaç, verilen metni alıp deterministik olarak 512-bit uzunluğunda bir hash üretmektir.
