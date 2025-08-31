@@ -84,7 +84,7 @@ hash: 3a1f5c9b... (128 haneli hexadecimal)
 * Matematiksel olarak gerçek kuantum hesaplaması değildir, klasik bilgisayar üzerinde çalışır.
 
 ---
-### Spin-Kuantum-Hash hakkında Yapay Zekaların görüşleri
+## Spin-Kuantum-Hash hakkında Yapay Zekaların görüşleri
 
 **GPT-5 Thinking mini (ChatGPT) Perspektifi**
 
