@@ -1,8 +1,11 @@
 # Spin-Q-Hash V2: Quantum-Hybrid Cryptography 
 
-![Avalanche Effect](https://shields.io)
-![Platform](https://shields.io)
-![Quantum](https://shields.io)
+![Avalanche Effect](https://img.shields.io/badge/Avalanche-49--53%25-brightgreen)
+![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Pardus-blue)
+![Quantum](https://img.shields.io/badge/Quantum-Qiskit%20Aer-purple)
+![License](https://img.shields.io/badge/License-Apache%202.0-orange)
+![NIST](https://img.shields.io/badge/NIST%20SP%20800--22-99%2F100-brightgreen)
+![Output](https://img.shields.io/badge/Output-772--bit-red)
 
 This project presents a **High-Precision Quantum-Hybrid Hash Algorithm** designed for the post-quantum era. It combines classical modular arithmetic (Base-3 Radix Armor) with quantum mechanical spin mapping.
 
