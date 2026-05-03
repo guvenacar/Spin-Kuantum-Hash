@@ -10,31 +10,32 @@ class HighPrecisionSpinEngine:
         self.backend = Aer.get_backend('qasm_simulator')
 
     def apply_high_precision_spin(self, data_value):
-        """
-        Her bir spin için 2^20 hassasiyetinde bir açısal durum yaratır.
-        """
-        qc = QuantumCircuit(self.sim_block_size, self.sim_block_size)
+        qc = QuantumCircuit(self.sim_block_size) # Klasik register'a gerek yok, state okuyacağız
         
-        # 1. Başlangıç: Tam Süperpozisyon (Tüm olasılıklar masada)
+        # 1. Başlangıç: Hadamard ile Süperpozisyon
         qc.h(range(self.sim_block_size))
 
-        # 2. Hassas Döndürme (Precision Rotation)
-        # 2^20 hassasiyeti sağlamak için veriyi çok küçük radyanlara bölüyoruz
+        # 2. Hassas Döndürme (Non-Linear ekleyelim)
         precision_factor = 2**20
-        angle = (data_value % precision_factor) * (2 * np.pi / precision_factor)
+        # Veriyi doğrudan açıya çevirmek yerine, sin/cos ile lineerliği kıralım
+        base_angle = (data_value % precision_factor) * (2 * np.pi / precision_factor)
 
         for i in range(self.sim_block_size):
-            # Her spin, verinin farklı bir 'harmonik' açısında döner
-            # Bu, 512 spinin her birinin eşsiz bir konumda olmasını sağlar
-            qc.ry(angle * (i + 1), i) 
-            qc.rz(angle / (i + 1), i) # Z ekseninde faz kayması ile 3. boyut
+            # Lineer (i+1) yerine asal sayılar veya karmaşık çarpanlar kullanıyoruz
+            dynamic_angle = base_angle * np.sqrt(i + 1) 
+            qc.ry(dynamic_angle, i)
+            qc.rz(base_angle * (i**2 + 1), i) # Kareli artış ile fazı dağıt
 
-        # 3. Girişim ve Dolanıklık (Interference)
-        # Olasılıkları birbirine bağlayarak 'çığ etkisini' yaratıyoruz
-        for i in range(self.sim_block_size - 1):
-            qc.cx(i, i + 1)
+        # 3. Gelişmiş Dolanıklık (All-to-All veya Circular CX)
+        # Sadece yan yana değil, dairesel dolanıklık çığ etkisini artırır
+        for i in range(self.sim_block_size):
+            qc.cx(i, (i + 1) % self.sim_block_size)
+        
+        # Ekstra Katman: Rastgeleliği artırmak için bir tur daha dönelim
+        for i in range(self.sim_block_size):
+            qc.ry(base_angle / (i + 1), i)
 
-        qc.measure(range(self.sim_block_size), range(self.sim_block_size))
+        # Önemli: Ölçüm yerine Statevector (durum vektörü) simülasyonu NIST için daha iyidir
         return qc
 
     def run_simulation(self, data_input):
